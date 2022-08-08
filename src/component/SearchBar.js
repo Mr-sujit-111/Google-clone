@@ -51,6 +51,7 @@ const GoogleSearch = styled.div`
     align-items: center;
     flex: .2;
     width: 31vw;
+    max-width: 638px;
     border-radius: 100px;
     min-width: 300px;
     max-height: 42px;
