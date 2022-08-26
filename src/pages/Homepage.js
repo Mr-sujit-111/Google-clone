@@ -5,22 +5,23 @@ import { Avatar, Grid, IconButton } from '@mui/material';
 import SearchBar from '../component/SearchBar';
 import { Link } from 'react-router-dom';
 import IconList from '../component/IconList';
+import DragableIconList from "../component/DragableIconList";
 
 function Homepage() {
     const [visibleIconList, setVisibleIconList] = useState(false);
     const IconListDiv = document.getElementsByClassName("iconListContainer");
     const AllIconButton = document.getElementsByClassName("allAppButton");
 
-    document.addEventListener("click", (e) => {
-        const withinBoundaries = e.composedPath().includes(IconListDiv[0])
-        const IconButtton = e.composedPath().includes(AllIconButton[0])
-        if (!withinBoundaries && !IconButtton) {
-            document.getElementsByClassName("iconListContainer")[0].style.display = "none"
-        } else if (IconButtton) {
-            setVisibleIconList(!visibleIconList)
-        }
+    // document.addEventListener("click", (e) => {
+    //     const withinBoundaries = e.composedPath().includes(IconListDiv[0])
+    //     const IconButtton = e.composedPath().includes(AllIconButton[0])
+    //     if (!withinBoundaries && !IconButtton) {
+    //         document.getElementsByClassName("iconListContainer")[0].style.display = "none"
+    //     } else if (IconButtton) {
+    //         setVisibleIconList(!visibleIconList)
+    //     }
 
-    })
+    // })
 
     return (
         <>
@@ -71,6 +72,7 @@ function Homepage() {
                                 <Link to="/">ਪੰਜਾਬੀ</Link>
                             </p>
                         </div>
+                        <DragableIconList />
                     </HomeBodySection>
                 </div>
             </div>

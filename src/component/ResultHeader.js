@@ -8,7 +8,7 @@ import SlideshowIcon from '@mui/icons-material/Slideshow';
 import ArticleIcon from '@mui/icons-material/Article';
 import LocalOfferSharpIcon from '@mui/icons-material/LocalOfferSharp';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ResultHeader() {
     const navigate = useNavigate();
@@ -24,22 +24,22 @@ function ResultHeader() {
                 </HeaderTopSection>
                 <div className="HeaderLink">
                     <div className="headerLinkItem">
-                        <SearchIcon fontSize="small" /> <a href='/'>All</a>
+                        <SearchIcon fontSize="small" /> <Link to='/All'>All</Link>
                     </div>
                     <div className="headerLinkItem">
-                        <ImageIcon fontSize="small" /> <a href='/'>Images</a>
+                        <ImageIcon fontSize="small" /> <Link to='/Images'>Images</Link>
                     </div>
                     <div className="headerLinkItem">
-                        <SlideshowIcon fontSize="small" /> <a href='/'>Video</a>
+                        <SlideshowIcon fontSize="small" /> <Link to='/Video'>Video</Link>
                     </div>
                     <div className="headerLinkItem">
-                        <ArticleIcon fontSize="small" /> <a href='/'>News</a>
+                        <ArticleIcon fontSize="small" /> <Link to='/News'>News</Link>
                     </div>
                     <div className="headerLinkItem">
-                        <LocalOfferSharpIcon fontSize="small" /> <a href='/'>Shoping</a>
+                        <LocalOfferSharpIcon fontSize="small" /> <Link to='/Shoping'>Shoping</Link>
                     </div>
                     <div className="headerLinkItem">
-                        <MoreVertIcon fontSize="small" /> <a href='/'>More</a>
+                        <MoreVertIcon fontSize="small" /> <Link to='/More'>More</Link>
                     </div>
                 </div>
             </Header>

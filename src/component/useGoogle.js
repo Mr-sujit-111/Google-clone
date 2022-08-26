@@ -7,14 +7,14 @@ function useGoogle(searchValue) {
     console.log(CONTEXT_KEY, API_KEY);
     const [data, setData] = useState("")
     useEffect(() => {
-        const fetchData = async () => {
-            // const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchValue}`);
-            // let result = await response.json();
-            // setData(result);
-        }
-        fetchData();
+        /* const fetchData = async () => {
+            const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchValue}`);
+            let result = await response.json();
+            setData(result);
+        } 
+        fetchData(); */
         setData(resultJson)
-    }, [searchValue])
+    }, [searchValue, API_KEY, CONTEXT_KEY])
 
     return { data }
 };

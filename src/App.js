@@ -5,6 +5,7 @@ import ResultPage from './pages/ResultPage';
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -12,7 +13,7 @@ function App() {
           <Homepage />
         </div>} />
         <Route path="/search" element={<ResultPage />} />
-        <Route path="*" element={<h2>404! Page not found</h2>} />
+        <Route path="*" element={<h2 className="pageNotFound">404! Page not found</h2>} />
       </Routes>
     </BrowserRouter>
   );
