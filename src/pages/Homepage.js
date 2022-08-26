@@ -72,7 +72,7 @@ function Homepage() {
                                 <Link to="/">ਪੰਜਾਬੀ</Link>
                             </p>
                         </div>
-                        <DragableIconList />
+                        {/* <DragableIconList /> */}
                     </HomeBodySection>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 function ResultBody({ data }) {
     return (
         <>
-            <Resultbody className="result__body">
+            <Resultbody className="result__body" id="resultBody">
                 {Object.keys(data).length > 0 > 0 && <>
                     <p>About {data.searchInformation.formattedTotalResults} results ({data.searchInformation.searchTime} seconds) </p>
 

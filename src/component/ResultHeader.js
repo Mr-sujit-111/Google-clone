@@ -22,7 +22,7 @@ function ResultHeader() {
                     <img title='home' onClick={handleClick} src="images/google.png" alt="" />
                     <SearchBar buttonVisible={false} />
                 </HeaderTopSection>
-                <div className="HeaderLink">
+                <div className="HeaderLink" id="HeaderLink">
                     <div className="headerLinkItem">
                         <SearchIcon fontSize="small" /> <Link to='/All'>All</Link>
                     </div>
@@ -32,11 +32,11 @@ function ResultHeader() {
                     <div className="headerLinkItem">
                         <SlideshowIcon fontSize="small" /> <Link to='/Video'>Video</Link>
                     </div>
-                    <div className="headerLinkItem">
+                    <div className="headerLinkItem" id="newsBlock">
                         <ArticleIcon fontSize="small" /> <Link to='/News'>News</Link>
                     </div>
-                    <div className="headerLinkItem">
-                        <LocalOfferSharpIcon fontSize="small" /> <Link to='/Shoping'>Shoping</Link>
+                    <div className="headerLinkItem" id="shoppingBlock">
+                        <LocalOfferSharpIcon fontSize="small" /> <Link to='/Shoping'>Shopping</Link>
                     </div>
                     <div className="headerLinkItem">
                         <MoreVertIcon fontSize="small" /> <Link to='/More'>More</Link>
@@ -74,6 +74,7 @@ const Header = styled.div`
     justify-content: center;
     align-items: flex-end;
     margin-right: 13px;
+    
     >a{
         text-decoration: none;
     color: #5F6368;
